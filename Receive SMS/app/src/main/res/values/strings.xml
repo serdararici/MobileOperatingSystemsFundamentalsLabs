@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Receive SMS</string>
+    <string name="textView">SMS Message</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab03</string>
+    <string name="button">ADD</string>
+    <string name="editText">Number</string>
+    <string name="editText2">Number</string>
+    <string name="textView">SUM = </string>
+</resources>

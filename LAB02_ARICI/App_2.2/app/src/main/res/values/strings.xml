@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App_2_2</string>
+    <string name="editTextNumber1">Number1</string>
+    <string name="editTextNumber2">Number2</string>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="division">Division</string>
+    <string name="textViewSolution">Solution</string>
+    <string name="buttonCalculate">Calculate</string>
+</resources>

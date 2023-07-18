@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/gs"
+        android:icon="@drawable/gs"
+        android:title="Galatasaray"/>
+    <item android:id="@+id/fb"
+        android:icon="@drawable/fb"
+        android:title="Fenerbahçe"/>
+    <item android:id="@+id/bjk"
+        android:icon="@drawable/bjk"
+        android:title="Beşiktaş"/>
+    <item android:id="@+id/ts"
+        android:icon="@drawable/ts"
+        android:title="Trabzonspor"/>
+</menu>

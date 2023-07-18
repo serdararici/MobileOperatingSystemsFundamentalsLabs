@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="80dp"
+        android:text="Calculate Equation\n     (X² + bx + c)"
+        android:textColor="#263EC1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="70dp"
+        android:text="Enter Coefficients"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeading" />
+
+    <TextView
+        android:id="@+id/textView_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        android:text="a"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTop" />
+
+    <TextView
+        android:id="@+id/textView_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="b"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_c"
+        app:layout_constraintStart_toEndOf="@+id/textView_a"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTop" />
+
+    <TextView
+        android:id="@+id/textView_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:text="c"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_b"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTop" />
+
+    <EditText
+        android:id="@+id/editTextNumber_a"
+        android:layout_width="88dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_a" />
+
+    <EditText
+        android:id="@+id/editTextNumber_b"
+        android:layout_width="88dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Enter b"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber_c"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber_a"
+        app:layout_constraintTop_toBottomOf="@+id/textView_b" />
+
+    <EditText
+        android:id="@+id/editTextNumber_c"
+        android:layout_width="88dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Enter c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_c" />
+
+    <TextView
+        android:id="@+id/textViewX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="42dp"
+        android:text="X1: "
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_a" />
+
+    <TextView
+        android:id="@+id/textViewX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="42dp"
+        android:text="X2: "
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewX1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_b" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="134dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="47dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
